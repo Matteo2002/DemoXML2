@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF00FF8B" Offset="0.282"/>
+                <GradientStop Color="#FF00FFE8" Offset="0.858"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="Btn_Aggiorna" Content="Visualizza dati" HorizontalAlignment="Left" Height="35" Margin="32,58,0,0" VerticalAlignment="Top" Width="135" Background="#FF00F3FF" Click="Btn_Aggiorna_Click"/>
+        <ListBox x:Name="Lst_Persone" HorizontalAlignment="Left" Height="237" Margin="25,115,0,0" VerticalAlignment="Top" Width="340"/>
+        <Button x:Name="Btn_Stop" Content="Interrompi caricamento" HorizontalAlignment="Left" Height="35" Margin="230,58,0,0" VerticalAlignment="Top" Width="135" Background="#FF00F3FF" Click="Btn_Stop_Click"/>
+        <TextBox x:Name="Txt_Nome" HorizontalAlignment="Left" Height="25" Margin="432,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113"/>
+        <TextBox x:Name="Txt_DataDiNascita" HorizontalAlignment="Left" Height="25" Margin="432,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113"/>
+        <TextBox x:Name="Txt_Anni" HorizontalAlignment="Left" Height="25" Margin="432,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113"/>
+        <TextBox x:Name="Txt_Cognome" HorizontalAlignment="Left" Height="25" Margin="432,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113"/>
+        <Button x:Name="Btn_Modifica" Content="Modifica" HorizontalAlignment="Left" Height="27" Margin="610,181,0,0" VerticalAlignment="Top" Width="112" Background="#FF00F3FF" Click="Btn_Modifica_Click"/>
+        <Button x:Name="Btn_Salva" Content="Salva" HorizontalAlignment="Left" Height="27" Margin="610,241,0,0" VerticalAlignment="Top" Width="112" Background="#FF00F3FF" Click="Btn_Salva_Click"/>
     </Grid>
 </Window>
